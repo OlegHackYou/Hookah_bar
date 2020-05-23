@@ -3,64 +3,72 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Orchid</title>
+	<title>Laung Bar</title>
 	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" href="css/dark.css">
+	<script src="JavaScript/form2.js"></script>
 </head>
 <body>
 	<header id="header" class="header">
+	<div class="switch">
+    	<input type="checkbox" id="switch-1" class="switch-check">
+    	<label for="switch-1" class="switch-label">
+       		 Опція
+       	<span class="switch-slider switch-slider-on"></span>
+           <span class="switch-slider switch-slider-off"></span>
+    </label>
+ </div>
 		<div class="container heading">
 			<div class="header-menu">
 				<img src="img/logo.png" alt="logo" class="logo" id="logo">
 				<nav>
 					<ul class="menu">
-						<li><a href="#header">Головна</a></li>
-						<li><a href="#about">Про нас</a></li>
+						<li ><a href="#header">Головна</a></li>
+						<li><a href="#about">Бронювання</a></li>
 						<li>
 							<a href="#services">Послуги</a>
 							<ul>
-								<li><a href="#service">Перукарські послуги</a></li>
-								<li><a href="#service">Манікюр та педикюр</a></li>
-								<li><a href="#service">Косметичні послуги</a></li>
+								<li><a href="#service">Ціни</a></li>
+								<li><a href="table.html">Меню</a></li>
+								<li><a href="#service">Бронь</a></li>
+								<li><a href="#service">Караоке</a></li>
+								<li><a href="#service">Ресторан</a></li>
 							</ul>
 						</li>
-						<li><a href="#gallery">Галарея</a></li>
+						<li><a href="#gallery">Галерея</a></li>
 						<li><a href="#contacts">Контакти</a></li>
 					</ul>
 				</nav>
 			</div>
 			<div class="titles">
-				<p class="title">Вітаємо в салоні краси</p>
-				<h1><<Орхідея>></h1>
+				<p class="title">Вітаємо в нашій кальянній</p>
+				<h1>Ми раді вас бачити</h1>
 			</div>
 		</div>
-		<div class="icons">
-				<a href="https://www.facebook.com" target="_blanck"><img src="https://img.icons8.com/ios/50/000000/facebook.png"></a>
-				<a href="https://www.instagram.com/?hl=uk" target="_blanck"><img src="https://img.icons8.com/ios/50/000000/instagram-new.png"></a>
-				<a href="https://www.google.com/intl/ru/gmail/about/" target="_blanck"><img src="https://img.icons8.com/ios/50/000000/google-logo.png"></a>
-			</div>
-			<button onclick="topFunction()" id="myBtn" title="Go to top">Наверх</button>
+		<div>
+             <a class="button" href="#"  onclick="buttonClick(this)">Забронювати</a>
+        </div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Наверх</button>
 	</header>
 
 	<section id="about">
 		<div class="container about">
 			<div class="titles_1">
 				<div class="title_1">
-					<p>Про салон краси</p>
+					<p>Про нас</p>
 				</div>
 				<hr>
-				<h1><<Орхідея>></h1>
+				<h1>Lounge Bar</h1>
 			</div>
 			<div class="row">
 				<div class="image">
-					<img src="img/orchid.png" alt="orchid" class="animated fadeInLeft">
+					<img src="img/img-4.jpg" alt="">
 				</div>
 				<div class="text animated fadeInRight">
-					<p>Салон краси "Орхідея" відкрився в 2016 році у місті Львові.</p>
-					<p>За 3 роки роботи в руках наших працівників побувало понад 10 000 клієнтів. Ми пишаємося такими показниками!</p>
-					<p>Весільні, вечірні, випускні зачіски, макіяжі, креативні пофарбування волосся, всі новинки у галузі нейл-індустрії, подології, все, що існує для того, щоб робити жінку ще гарнішою, ми активно вивчаємо і практикуємо.</p>
-					<p>Щодня ми думаємо над тим, чим ще ми можемо бути корисними. Що ще ми можемо зробити для вас і вашої краси.</p>
+					<p>У самому центрі старовинного міста Ви знайдете оазу відпочинку, де пробуджуються усі органи чуттів</p>
+					<p>Атмосфера закладу створена з поєднанням класики і сучасності в інтер’єрі</p>
+					<p>Вишуканий дизайн преміум-класу у стилі лофт сприятиме релаксації та спілкуванню, усі елементи дизайну – це ексклюзивні речі, виготовлені на замовлення.</p>
+					<p>Відкрита кухня, де за склом готуються авторські страви паназіатської, європейської чи української кухонь</p>
 				</div>
 			</div>
 		</div>
@@ -74,16 +82,16 @@
 			<hr>
 			<div class="service" id="service">
 				<div class="photo animated fadeInLeft">
-					<img src="img/photo-1.jpg" alt="">
-					<p>Перукарські послуги</p>
+					<img src="img/karaoke.png" alt="">
+					<p>КАРАОКЕ</p>
 				</div>
 				<div class="photo animated fadeInDown">
-					<img src="img/photo-2.jpg" alt="">
-					<p>Манікюр та педикюр</p>
+					<img src="img/dish.png" alt="">
+					<p>РЕСТОРАН</p>
 				</div>
 				<div class="photo animated fadeInRight">
-					<img src="img/photo-3.jpg" alt="">
-					<p>Сучасна косметологія</p>
+					<img src="img/shisha-1.png" alt="">
+					<p>КАЛЬЯН</p>
 				</div>
 			</div>
 		</div>
@@ -91,46 +99,28 @@
 
 	<section id="gallery">
 		<div class="container gallery">
-			<div class="title_2">
-				<p>Галарея</p>
+			<div class="title_3">
+				<p>Галерея</p>
 			</div>
 			<hr>
 			<div class="photo-wall">
 				<div class="wall">
-					<img src="img/image-1.jpg" alt="">
-					<div>
-						<p>Масаж</p>
-					</div>
+					<img src="img/img-1.jpg" alt="">
 				</div>
 				<div class="wall">
-					<img src="img/image-2.jpg" alt="">
-					<div>
-						<p>Манікюр Педикюр</p>
-					</div>
+					<img src="img/img-2.jpg" alt="">
 				</div>
 				<div class="wall">
-					<img src="img/image-3.jpg" alt="">
-					<div>
-						<p>Перукарські послуги</p>
-					</div>
+					<img src="img/img-3.jpg" alt="">
 				</div>
 				<div class="wall">
-					<img src="img/image-4.jpg" alt="">
-					<div>
-						<p>Візаж</p>
-					</div>
+					<img src="img/img-4.jpg" alt="">
 				</div>
 				<div class="wall">
-					<img src="img/image-5.jpg" alt="">
-					<div>
-						<p>Косметологія</p>
-					</div>
+					<img src="img/img-5.jpg" alt="">
 				</div>
 				<div class="wall">
-					<img src="img/image-6.jpg" alt="">
-					<div>
-						<p>Депіляція/Шугарінг</p>
-					</div>
+					<img src="img/img-6.jpg" alt="">
 				</div>
 			</div>
 		</div>
@@ -139,33 +129,33 @@
 	<section id="contacts">
 		<div class="container contacts">
 			<div class="cont_t">
-			<p>Зв’яжіться з нами і ми будем раді відповісти на ваші запитання:</p>
+			<p>Бронювання:</p>
 			</div>
-			<form action="index.html" class="form" onsubmit="test()">
-				<table>
-					<tr>
-						<td>
-							<input type="text" name="name" placeholder="Ім’я*" required id="name">
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="tel" name="tel" pattern="\+380\[-][0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required placeholder="+380-67-987-25-45">
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="email" name="your_email" required placeholder="Email">
-						</td>
-					</tr>
-				</table>
-				<label for="">
+			<form id="section-form" action="index.html" class="form" onsubmit="test(); return false">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" name="name" placeholder="Ім’я*" required id="name" onfocus="myFunction(this)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="tel" name="tel" id="number" pattern="\+380\[-][0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required placeholder="+380-67-987-25-45" onfocus="myFunction(this)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="email" name="your_email" required placeholder="Email" onfocus="myFunction(this)">
+                        </td>
+                    </tr>
+                </table>
+                <label for="">
 					<textarea name="message" id="" cols="30" rows="10"></textarea>
 				</label>
-				<div>
-					<input type="submit" value="Відправити" class="submit" id="submit">
-				</div>
-			</form>
+                <div>
+                    <input type="submit" value="Відправити" class="submit" id="submit_1">
+                </div>
+            </form>
 		</div>
 	</section>
 
@@ -174,33 +164,28 @@
 			<div class="block">
 				<img src="https://img.icons8.com/ios/50/000000/marker.png" >
 				<h3>Адреса</h3>
-				<p>вул.Лесі Українки, 23</p>
+				<p>вул.Володимира Великого, 61</p>
 				<p>м.Львів</p>
 			</div>
 			<div class="block">
 				<img src="https://img.icons8.com/ios/50/000000/phone.png">
 				<h3>Телефони</h3>
-				<p>+38(093)522 14 28</p>
-				<p>+38(063)458 69 52</p>
+				<p>+38(0500717605)</p>
+				<p>+38(0677338793)</p>
 			</div>
 			<div class="block">
 				<img src="https://img.icons8.com/ios/50/000000/alarm-clock.png">
 				<h3>Години роботи</h3>
-				<p>Пн-Сб: 09:00-18:00</p>
-				<p>Нд: 10:00-15:00</p>
+				<p>Пн-Сб: 09:00-24:00</p>
+				<p>Нд: 9:00-23:00</p>
 			</div>
-			<div class="block">
+			<div class="block block_1">
 				<img src="https://img.icons8.com/ios/50/000000/secured-letter.png">
 				<h3>E-mail</h3>
-				<p>orchid@gmail.com</p>
+				<p>LoungeBar@gmail.com</p>
 			</div>
 		</div>
 	</footer>
-	<div class="right">
-		<p class="left">© 2019 Orchid. Усі права застережено.</p>
-		<p class="autor">Designed by Nataliia.</p>
-	</div>
-
-	<script type="text/javascript" src="js/script.js"></script>
+	 <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
